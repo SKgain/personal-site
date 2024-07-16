@@ -1,0 +1,464 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+[class*='col-']
+{
+    float: left;
+    padding: 10px;
+}
+/*for mobile*/
+[class*='col-']
+{
+    width: 100%;
+}
+img{
+    width: 130px;
+    height: 130px;
+     
+
+}
+h1{
+    padding: 2% 2%;
+    padding-top: 4%;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+
+}
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+a{
+   
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+    
+    border-radius: 10px;
+
+}
+p{
+    font-size:1.2rem;
+    text-align: justify;
+}
+.dotted-hr{
+    border: dotted 6px black;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70Px;
+}
+.aboutme-hr{
+   
+    margin: 0 auto;
+    border: dashed 1px;
+    border-bottom: none;
+  
+}
+hr{
+    margin: 10px 0;
+}
+
+/*nav-bar design start*/
+.nav-bar a:hover{
+    background-color: #616464;
+    cursor: pointer;
+}
+.nav-bar{
+    background-color:  #46211A;
+    padding: 1% 2%;
+    text-align: center;
+}
+.nav-img img{
+    border-radius: 50%; 
+}
+.nav-title{
+   
+}
+.nav-manu{
+    display: flex;
+    flex-direction: column;
+
+}
+.nav-manu a{
+    background-color: #6c9499;
+    font-size: 1.5rem;
+}
+.nav-bar::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+/*nav-bar design end*/
+
+/*profile design start*/
+.profile{
+    padding: 130px 50px;
+    background-color: #A43820;
+    position:relative;
+}
+.profile .top-img{
+    position: absolute;
+    right: 20px;
+    top:15px;
+    transition: transform 2s;
+}
+.profile .top-img:hover{
+    transform: scale(1.3);
+}
+
+.profile .bottom-img{
+    position: absolute;
+    left: 20px;
+    bottom:2px;
+    transition: transform 2s;
+}
+.profile .bottom-img:hover{
+    transform: rotate(360deg);
+}
+.profile-desc h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 3.5rem;
+}
+.profile-desc p{
+    font-size: 1.5rem;
+    margin: 0 auto 25px auto;
+    color: white;
+    text-align: center;
+    width: 90%;
+
+
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/*profile design end*/
+/*aboutme design start*/
+.about-me{
+    background-color: #F1D3B2;
+    padding: 1% 7%;
+    padding-bottom: 80px;
+    color: black;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;   
+    
+}
+
+
+.aboutme-img img{
+    border: 5px solid white;
+    height: 150px;
+    width: 130px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px black;
+    
+}
+
+.aboutme-img img:hover{
+   
+    box-shadow: 6px 6px 10px white;
+    
+}
+.about-me p{
+    text-align: center;
+}
+.about-me a{
+    text-transform: lowercase;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: normal;
+}
+
+.cv-button{
+    background-color: #AACCFF;
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 12px;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+.cv-button:hover{
+    text-shadow:4px 4px 8px white;
+}
+.about-me::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*aboutme design end*/
+/*experience design start*/
+.experience{
+
+    padding: 1% 3%;
+    color:  #f3e8e6;
+}
+.experience .card{
+    background-color: #A43820;
+    padding: 30px;
+    transition: 0.3s;
+    height: 750px;
+
+}
+.experience .card:hover{
+    box-shadow: 0 4px 8px  5px white;
+}
+.experience .card-icon{
+    text-align: center;
+}
+.card-icon img{
+    margin-top: 20px;
+    width: 120px;
+    border: solid;
+    border-radius: 20%;
+    
+}
+.card-icon img:hover{
+    box-shadow: 0 2px 3px  3px white;
+}
+.card-title{
+    text-align: center;
+    background-color: #e04729;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.skill-container{
+    padding: 10px;
+
+}
+.skill-container li{
+list-style-type: none;
+font-weight: bolder;
+margin: 30px 10px;
+position: relative;
+
+}
+.skill-container li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgb(250, 247, 247,.5); 
+    border-radius: 1000px;
+
+    
+    }
+    .skill-container li::after{
+        content: '';
+        position: absolute;
+        top: calc(100% + 5px);
+        left:0;
+        width: 0;
+        height: 15px;
+        background-color: rgb(250, 247, 247,1); 
+        border-radius: 1000px;
+
+        animation-duration: 2s;
+        animation-delay: 1Ss;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        }
+
+    .skill-container li.html::after{
+        animation-name: html;
+    }
+    @keyframes html{
+        to{
+            width: 90%;
+
+        }
+        
+    }
+    .skill-container li.css::after{
+        animation-name: css;
+    }
+    @keyframes css{
+        to{
+            width: 90%;
+
+        }
+        
+    }
+    .skill-container li.php::after{
+        animation-name: php;
+    }
+    @keyframes php{
+        to{
+            width: 70%;
+
+        }
+        
+    }
+    .skill-container li.javascript::after{
+        animation-name: javascript;
+    }
+    @keyframes javascript{
+        to{
+            width: 80%;
+
+        }
+        
+    }
+    .skill-container li.sql::after{
+        animation-name: sql;
+    }
+    @keyframes sql{
+        to{
+            width: 85%;
+
+        }
+        
+    }
+    .skill-container li.c::after{
+        animation-name: c;
+    }
+    @keyframes c{
+        to{
+            width: 90%;
+
+        }
+        
+    }
+    .skill-container li.c-plus::after{
+        animation-name: c-plus;
+    }
+    @keyframes c-plus{
+        to{
+            width: 85%;
+
+        }
+        
+    }
+    .skill-container li.java::after{
+        animation-name: java;
+    }
+    @keyframes java{
+        to{
+            width: 80%;
+
+        }
+        
+    }
+
+    .experience::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+    
+/*experience design end*/
+/*achivement contact start*/
+
+.achivement-contact{
+    background-color:  #46211A;
+    text-align: center;
+    color: white ;
+    width: 100%;
+    padding: 50px;
+}
+.achivement-contact.dotted-hrr{
+
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70Px;
+}
+
+.contact{
+    padding: 1% 7%;
+    text-align: center;
+
+}
+.contact input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+.contact button{
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+}
+.btn{
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+.more-way-to-contact {
+    text-align: center;
+    
+}
+.media-btn{
+    padding-top: 100px;
+}
+.media-btn.btn{
+    border: none;
+    border-radius: 25px;
+}
+.btn:hover{
+
+    transform: scale(1.2);
+    background-color: rgb(202, 200, 200);
+    box-shadow: 0 2px 2px 2px black;
+
+}
+.achivement-contact::after{
+    clear: both;
+    content: '';
+    display: table;
+    
+}
+
+/*achivement contact end*/
+.footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.foot-desc {
+    text-align: right;
+}
+.footer-contact{
+    text-align: left;
+    font-size: 1rem;
+}
+.footer::after{
+    content: '';
+    display: table;
+    clear: both;
+   
+}
